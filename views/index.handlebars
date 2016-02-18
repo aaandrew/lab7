@@ -8,6 +8,8 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/introHCI.css" rel="stylesheet">
+	{{> googleAnalytics}}
+	
 	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -27,7 +29,7 @@
 
 		<h4>Projects</h4>
 
-		{{#if grid}}
+		{{#if list}}
 			{{#each projects}}
 				<div class="project" id="{{id}}">
 					<div class="thumbnail">
@@ -38,7 +40,7 @@
 						<div class="likeCtr"><button class="btn btn-default likeBtn">Like</button></div>
 						<div class="details"></div>
 					</div>
-				</div>
+				</	div>
 			{{/each}}
 		{{else}}
 			<div class="row">
@@ -197,6 +199,5 @@
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/introHCI.js"></script>
-	{{> googleAnalytics}}
 </body>
 </html>
