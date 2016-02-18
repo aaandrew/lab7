@@ -9,7 +9,7 @@ exports.view = function(req, res){
   console.log(random_num);
 
   if (random_num >= 0) {
-    projects['list'] = false;
+    projects['list'] = true;
     res.render('index', projects);
   } else {
     res.redirect('/grid');
@@ -17,6 +17,6 @@ exports.view = function(req, res){
 };
 
 exports.viewGrid = function(req, res){
-  projects['list'] = true;
+  projects['list'] = false;
   res.render('index', projects);
 }
